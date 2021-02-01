@@ -197,7 +197,7 @@ export default async function getConfig(
       // prettier-ignore
       webpackConfig.module
         .rule(rule)
-          .test(/\.(js|mjs|jsx)$/)
+          .test(/\.(js|mjs|jsx|ts|tsx)$/)
             .include
             .add((a) => {
               // 支持绝对路径匹配
